@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="/pv-forecast/favicon.svg" />
+    <link rel="manifest" href="/pv-forecast/manifest.json" />
+    <meta name="theme-color" content="#08080d" />
+    <meta name="google-site-verification" content="CKatSkDqt_Ltx0DSr5jKbbigzKLnibt9X-YUcEjyEeQ" />
+    <link rel="apple-touch-icon" href="/pv-forecast/favicon-192.png" />
+
+    <!-- Primary meta (German default, overridden by script for EN) -->
+    <title>Solar-Vorhersage | 7-Tage PV-Ertrag, Wetter &amp; Strompreise</title>
+    <meta name="description" content="Kostenlose 7-Tage-Solarprognose für deine PV-Anlage. Stündliche Leistungsvorhersage, Wetter, Einstrahlung und Börsenstrompreise — direkt im Browser, ohne Anmeldung." />
+
+    <!-- Canonical & hreflang (primary domain) -->
+    <link rel="canonical" href="https://solar-vorhersage.de/" />
+    <link rel="alternate" hreflang="de" href="https://solar-vorhersage.de/" />
+    <link rel="alternate" hreflang="en" href="https://solar-vorhersage.de/" />
+    <link rel="alternate" hreflang="x-default" href="https://solar-vorhersage.de/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solar-vorhersage.de/" />
+    <meta property="og:title" content="Solar-Vorhersage | 7-Tage PV-Ertrag, Wetter &amp; Strompreise" />
+    <meta property="og:description" content="Kostenlose 7-Tage-Solarprognose für deine PV-Anlage. Stündliche Leistungsvorhersage, Wetter, Einstrahlung und Börsenstrompreise — direkt im Browser, ohne Anmeldung." />
+    <meta property="og:image" content="https://solar-vorhersage.de/og-image.png" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solar-Vorhersage | 7-Tage PV-Ertrag, Wetter &amp; Strompreise" />
+    <meta name="twitter:description" content="Kostenlose 7-Tage-Solarprognose für deine PV-Anlage. Stündliche Leistungsvorhersage, Wetter, Einstrahlung und Börsenstrompreise — direkt im Browser, ohne Anmeldung." />
+    <meta name="twitter:image" content="https://solar-vorhersage.de/og-image.png" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Solar-Vorhersage",
+      "alternateName": "PV Forecast",
+      "url": "https://solar-vorhersage.de/",
+      "description": "Kostenlose 7-Tage-Solarprognose für Photovoltaikanlagen mit stündlicher Leistungsvorhersage, Wetter und Börsenstrompreisen.",
+      "applicationCategory": "WeatherApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "inLanguage": ["de", "en"]
+    }
+    </script>
+
+    <!-- Language-aware meta: override title & description for English browsers -->
+    <script>
+      (function() {
+        var lang = navigator.language || '';
+        if (!lang.startsWith('de')) {
+          document.documentElement.lang = 'en';
+          document.title = 'Solar-Vorhersage | 7-Day PV Power, Weather & Electricity Prices';
+          var desc = document.querySelector('meta[name="description"]');
+          if (desc) desc.content = 'Free 7-day solar forecast for your PV system. Hourly power predictions, weather, irradiance and wholesale electricity prices \u2014 in your browser, no sign-up.';
+        }
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFYRWJYNTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZFYRWJYNTY');
+    </script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #08080d; }
+    </style>
+    <script type="module" crossorigin src="/pv-forecast/assets/index-l643fXY-.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Fallback content for crawlers / no-JS -->
+    <noscript>
+      <div style="max-width:700px;margin:40px auto;padding:0 20px;color:#e5e5e5;font-family:system-ui,sans-serif">
+        <h1>&#9728;&#65039; Solar-Vorhersage</h1>
+        <p style="margin:12px 0;color:#999">Kostenlose 7-Tage-Solarprognose f&uuml;r Photovoltaikanlagen &mdash; Free 7-day solar forecast for PV systems</p>
+        <ul style="margin:12px 0 24px 20px;color:#888">
+          <li>7-Tage PV-Ertragsprognose mit st&uuml;ndlicher Leistungsvorhersage</li>
+          <li>Bis zu 3 Dachfl&auml;chen mit individueller Ausrichtung &amp; Neigung</li>
+          <li>Wetter&uuml;bersicht: Temperatur, Bew&ouml;lkung, UV-Index, Sonnenscheindauer</li>
+          <li>B&ouml;rsenstrompreise vom Gro&szlig;handelsmarkt (EPEX SPOT)</li>
+          <li>Automatische Aktualisierung alle 30 Minuten</li>
+          <li>Keine Anmeldung n&ouml;tig &mdash; funktioniert auf allen Ger&auml;ten</li>
+        </ul>
+        <p style="color:#666;font-size:14px">Daten: Open-Meteo (ECMWF IFS + DWD ICON) &middot; Preise: aWATTar (EPEX SPOT) &middot; Referenz: EU PVGIS</p>
+        <p style="color:#555;font-size:13px;margin-top:20px">Diese App ben&ouml;tigt JavaScript. Bitte aktiviere JavaScript in deinem Browser. &mdash; This app requires JavaScript.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

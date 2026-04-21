@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0%" stop-color="#facc15" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#facc15" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- background -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- sun glow -->
+  <circle cx="26" cy="24" r="28" fill="url(#glow)"/>
+  <!-- sun -->
+  <circle cx="26" cy="24" r="17" fill="url(#sun)"/>
+  <!-- small solar panel — tilted rectangle, bottom-right -->
+  <g transform="translate(46,50) rotate(-20)" opacity=".9">
+    <rect x="-11" y="-7" width="22" height="14" rx="1.5" fill="#1e1b4b" stroke="rgba(255,255,255,.25)" stroke-width=".7"/>
+    <!-- grid -->
+    <line x1="-3.7" y1="-7" x2="-3.7" y2="7" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+    <line x1="3.7" y1="-7" x2="3.7" y2="7" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+    <line x1="-11" y1="0" x2="11" y2="0" stroke="rgba(255,255,255,.18)" stroke-width=".5"/>
+  </g>
+</svg>
